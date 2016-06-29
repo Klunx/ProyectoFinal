@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE6E53FB1D18075B002538A6 /* MapLocatorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6E53FA1D18075B002538A6 /* MapLocatorVC.swift */; };
 		EEBD68001D16C9CA00A2DCAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBD67FF1D16C9CA00A2DCAE /* AppDelegate.swift */; };
 		EEBD68021D16C9CA00A2DCAE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBD68011D16C9CA00A2DCAE /* ViewController.swift */; };
 		EEBD68051D16C9CA00A2DCAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEBD68031D16C9CA00A2DCAE /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EE6E53FA1D18075B002538A6 /* MapLocatorVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapLocatorVC.swift; sourceTree = "<group>"; };
 		EEBD67FC1D16C9CA00A2DCAE /* ProyectoFinal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProyectoFinal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEBD67FF1D16C9CA00A2DCAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EEBD68011D16C9CA00A2DCAE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				EEBD680B1D16C9CA00A2DCAE /* LaunchScreen.storyboard */,
 				EEBD680E1D16C9CA00A2DCAE /* Info.plist */,
 				EEBD68061D16C9CA00A2DCAE /* ProyectoFinal.xcdatamodeld */,
+				EE6E53FA1D18075B002538A6 /* MapLocatorVC.swift */,
 			);
 			path = ProyectoFinal;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE6E53FB1D18075B002538A6 /* MapLocatorVC.swift in Sources */,
 				EEBD68081D16C9CA00A2DCAE /* ProyectoFinal.xcdatamodeld in Sources */,
 				EEBD68021D16C9CA00A2DCAE /* ViewController.swift in Sources */,
 				EEBD68001D16C9CA00A2DCAE /* AppDelegate.swift in Sources */,
@@ -488,6 +492,7 @@
 				EEBD68291D16C9CA00A2DCAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EEBD682A1D16C9CA00A2DCAE /* Build configuration list for PBXNativeTarget "ProyectoFinalTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +501,7 @@
 				EEBD682C1D16C9CA00A2DCAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EEBD682D1D16C9CA00A2DCAE /* Build configuration list for PBXNativeTarget "ProyectoFinalUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +510,7 @@
 				EEBD682F1D16C9CA00A2DCAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
