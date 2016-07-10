@@ -16,6 +16,9 @@
 		EEBD680D1D16C9CA00A2DCAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEBD680B1D16C9CA00A2DCAE /* LaunchScreen.storyboard */; };
 		EEBD68181D16C9CA00A2DCAE /* ProyectoFinalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBD68171D16C9CA00A2DCAE /* ProyectoFinalTests.swift */; };
 		EEBD68231D16C9CA00A2DCAE /* ProyectoFinalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBD68221D16C9CA00A2DCAE /* ProyectoFinalUITests.swift */; };
+		EED7C47F1D31D8FC00B74991 /* QRReaderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED7C47E1D31D8FC00B74991 /* QRReaderVC.swift */; };
+		EED7C4811D31DAFF00B74991 /* QRDisplayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED7C4801D31DAFF00B74991 /* QRDisplayVC.swift */; };
+		EED7C4831D31EBD100B74991 /* QRNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED7C4821D31EBD100B74991 /* QRNavController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		EEBD681E1D16C9CA00A2DCAE /* ProyectoFinalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProyectoFinalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEBD68221D16C9CA00A2DCAE /* ProyectoFinalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProyectoFinalUITests.swift; sourceTree = "<group>"; };
 		EEBD68241D16C9CA00A2DCAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EED7C47E1D31D8FC00B74991 /* QRReaderVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRReaderVC.swift; sourceTree = "<group>"; };
+		EED7C4801D31DAFF00B74991 /* QRDisplayVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRDisplayVC.swift; sourceTree = "<group>"; };
+		EED7C4821D31EBD100B74991 /* QRNavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRNavController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +115,9 @@
 				EEBD680E1D16C9CA00A2DCAE /* Info.plist */,
 				EEBD68061D16C9CA00A2DCAE /* ProyectoFinal.xcdatamodeld */,
 				EE6E53FA1D18075B002538A6 /* MapLocatorVC.swift */,
+				EED7C47E1D31D8FC00B74991 /* QRReaderVC.swift */,
+				EED7C4801D31DAFF00B74991 /* QRDisplayVC.swift */,
+				EED7C4821D31EBD100B74991 /* QRNavController.swift */,
 			);
 			path = ProyectoFinal;
 			sourceTree = "<group>";
@@ -262,9 +271,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EED7C4811D31DAFF00B74991 /* QRDisplayVC.swift in Sources */,
 				EE6E53FB1D18075B002538A6 /* MapLocatorVC.swift in Sources */,
 				EEBD68081D16C9CA00A2DCAE /* ProyectoFinal.xcdatamodeld in Sources */,
 				EEBD68021D16C9CA00A2DCAE /* ViewController.swift in Sources */,
+				EED7C4831D31EBD100B74991 /* QRNavController.swift in Sources */,
+				EED7C47F1D31D8FC00B74991 /* QRReaderVC.swift in Sources */,
 				EEBD68001D16C9CA00A2DCAE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
