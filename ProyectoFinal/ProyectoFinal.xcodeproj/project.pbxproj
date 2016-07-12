@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		EE6E53FB1D18075B002538A6 /* MapLocatorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6E53FA1D18075B002538A6 /* MapLocatorVC.swift */; };
+		EE76347B1D33A28200F14969 /* CrearRutaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE76347A1D33A28200F14969 /* CrearRutaVC.swift */; };
+		EE76347D1D33B74C00F14969 /* Ruta.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE76347C1D33B74C00F14969 /* Ruta.swift */; };
 		EEBD68001D16C9CA00A2DCAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBD67FF1D16C9CA00A2DCAE /* AppDelegate.swift */; };
 		EEBD68021D16C9CA00A2DCAE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBD68011D16C9CA00A2DCAE /* ViewController.swift */; };
 		EEBD68051D16C9CA00A2DCAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEBD68031D16C9CA00A2DCAE /* Main.storyboard */; };
@@ -40,6 +42,8 @@
 
 /* Begin PBXFileReference section */
 		EE6E53FA1D18075B002538A6 /* MapLocatorVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapLocatorVC.swift; sourceTree = "<group>"; };
+		EE76347A1D33A28200F14969 /* CrearRutaVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrearRutaVC.swift; sourceTree = "<group>"; };
+		EE76347C1D33B74C00F14969 /* Ruta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ruta.swift; sourceTree = "<group>"; };
 		EEBD67FC1D16C9CA00A2DCAE /* ProyectoFinal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProyectoFinal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEBD67FF1D16C9CA00A2DCAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EEBD68011D16C9CA00A2DCAE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -118,6 +122,8 @@
 				EED7C47E1D31D8FC00B74991 /* QRReaderVC.swift */,
 				EED7C4801D31DAFF00B74991 /* QRDisplayVC.swift */,
 				EED7C4821D31EBD100B74991 /* QRNavController.swift */,
+				EE76347A1D33A28200F14969 /* CrearRutaVC.swift */,
+				EE76347C1D33B74C00F14969 /* Ruta.swift */,
 			);
 			path = ProyectoFinal;
 			sourceTree = "<group>";
@@ -208,6 +214,7 @@
 				TargetAttributes = {
 					EEBD67FB1D16C9CA00A2DCAE = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = YHR45B9REA;
 					};
 					EEBD68121D16C9CA00A2DCAE = {
 						CreatedOnToolsVersion = 7.3;
@@ -276,7 +283,9 @@
 				EEBD68081D16C9CA00A2DCAE /* ProyectoFinal.xcdatamodeld in Sources */,
 				EEBD68021D16C9CA00A2DCAE /* ViewController.swift in Sources */,
 				EED7C4831D31EBD100B74991 /* QRNavController.swift in Sources */,
+				EE76347D1D33B74C00F14969 /* Ruta.swift in Sources */,
 				EED7C47F1D31D8FC00B74991 /* QRReaderVC.swift in Sources */,
+				EE76347B1D33A28200F14969 /* CrearRutaVC.swift in Sources */,
 				EEBD68001D16C9CA00A2DCAE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -421,10 +430,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ProyectoFinal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.au.klunx.ProyectoFinal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -432,10 +444,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ProyectoFinal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.au.klunx.ProyectoFinal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

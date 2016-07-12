@@ -40,6 +40,17 @@
                                     <segue destination="Y63-4w-o27" kind="showDetail" id="d5d-2V-4KP"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p1A-zI-RoA">
+                                <rect key="frame" x="8" y="202" width="359" height="52"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <state key="normal" title="Crear Nueva Ruta">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="m5J-FH-yAe" kind="showDetail" id="Gkd-1K-wWe"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -48,9 +59,13 @@
                             <constraint firstAttribute="trailingMargin" secondItem="Grd-xP-jKD" secondAttribute="trailing" constant="-4" id="R6L-RY-Z92"/>
                             <constraint firstAttribute="trailingMargin" secondItem="j6S-Er-6v7" secondAttribute="trailing" id="VXY-uF-MzS"/>
                             <constraint firstItem="Grd-xP-jKD" firstAttribute="leading" secondItem="j6S-Er-6v7" secondAttribute="leading" id="cmm-VR-Av2"/>
+                            <constraint firstItem="p1A-zI-RoA" firstAttribute="top" secondItem="Grd-xP-jKD" secondAttribute="bottom" constant="8" symbolic="YES" id="eqg-gR-tXs"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="p1A-zI-RoA" secondAttribute="bottom" constant="413" id="hqF-gA-4dd"/>
                             <constraint firstItem="j6S-Er-6v7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-4" id="kF6-Fs-G3C"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="p1A-zI-RoA" secondAttribute="trailing" constant="-8" id="khY-fl-43P"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Grd-xP-jKD" secondAttribute="bottom" constant="473" id="wlh-sc-NBZ"/>
                             <constraint firstItem="j6S-Er-6v7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="57" id="yYH-7e-eGa"/>
+                            <constraint firstItem="p1A-zI-RoA" firstAttribute="leading" secondItem="Grd-xP-jKD" secondAttribute="leading" id="zuf-TR-wds"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -58,6 +73,79 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="379.5" y="312.5"/>
+        </scene>
+        <!--Crear RutaVC-->
+        <scene sceneID="4PI-1l-jkf">
+            <objects>
+                <viewController id="m5J-FH-yAe" customClass="CrearRutaVC" customModule="ProyectoFinal" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="skt-II-OPQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="1Qc-zl-8mc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="D1d-0j-KPf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Crear una nueva ruta" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zSw-Y3-8dP">
+                                <rect key="frame" x="16" y="46" width="268" height="25"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nombra tu ruta:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UCA-BC-RSh">
+                                <rect key="frame" x="20" y="79" width="295" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LQy-Xq-5nK">
+                                <rect key="frame" x="16" y="108" width="299" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Descripcion" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLf-n4-IqN">
+                                <rect key="frame" x="18" y="151" width="292" height="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hgM-Po-HUe">
+                                <rect key="frame" x="16" y="179" width="299" height="78"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kIo-eg-C6S">
+                                <rect key="frame" x="18" y="265" width="132" height="46"/>
+                                <state key="normal" title="Agregar Foto"/>
+                                <connections>
+                                    <action selector="camara" destination="m5J-FH-yAe" eventType="touchUpInside" id="8tS-D8-OXw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="joK-OL-x0R">
+                                <rect key="frame" x="187" y="265" width="128" height="46"/>
+                                <state key="normal" title="Salvar Ruta"/>
+                                <connections>
+                                    <action selector="salvarRuta" destination="m5J-FH-yAe" eventType="touchUpInside" id="bB0-UG-BjY"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2gn-iu-biz">
+                                <rect key="frame" x="12" y="319" width="303" height="159"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="agregarFotoBtn" destination="kIo-eg-C6S" id="FQd-dU-8C3"/>
+                        <outlet property="descripcion" destination="hgM-Po-HUe" id="yEf-sJ-NZ5"/>
+                        <outlet property="fotoVista" destination="2gn-iu-biz" id="O4J-Hu-Y0I"/>
+                        <outlet property="titulo" destination="LQy-Xq-5nK" id="ynQ-47-by6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J4Z-28-kxM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1013.5" y="-292.5"/>
         </scene>
         <!--Map LocatorVC-->
         <scene sceneID="D3O-ia-kMv">
@@ -90,7 +178,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wHc-CG-SPB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1208.5" y="-147.5"/>
+            <point key="canvasLocation" x="1259.5" y="353.5"/>
         </scene>
         <!--Nav Controller-->
         <scene sceneID="yEo-19-Imh">
@@ -107,7 +195,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MXs-FB-l1U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1208.5" y="608.5"/>
+            <point key="canvasLocation" x="1213.5" y="1202.5"/>
         </scene>
         <!--ReaderVC-->
         <scene sceneID="mg8-d5-6kE">
