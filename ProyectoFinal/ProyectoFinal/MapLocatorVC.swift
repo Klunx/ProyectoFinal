@@ -16,12 +16,18 @@ class MapLocatorVC: UIViewController, CLLocationManagerDelegate {
     
     private let manejador = CLLocationManager()
     
+    @IBOutlet weak var titleRuta: UILabel!
     var startLocation: CLLocation!
     var lastLocation: CLLocation!
+    var ruta :Ruta!
 
-
+    override func viewWillAppear(animated: Bool) {
+        titleRuta.text = self.ruta.titulo
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Inicializar mapa.
         manejador.delegate = self
         manejador.desiredAccuracy = kCLLocationAccuracyBest

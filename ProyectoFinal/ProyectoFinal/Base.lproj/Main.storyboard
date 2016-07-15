@@ -21,7 +21,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p1A-zI-RoA">
-                                <rect key="frame" x="20" y="48" width="335" height="32"/>
+                                <rect key="frame" x="20" y="48" width="335" height="45"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="52" id="bJv-6G-RRC"/>
@@ -42,19 +42,26 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="p1A-zI-RoA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3WT-NM-O1N"/>
+                            <constraint firstItem="p1A-zI-RoA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4iy-Ob-dXQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="p1A-zI-RoA" secondAttribute="trailing" id="BTx-gC-rs6"/>
                             <constraint firstItem="p1A-zI-RoA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="4" id="Dgw-dC-otH"/>
+                            <constraint firstItem="p1A-zI-RoA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="4" id="DxR-5T-28K"/>
                             <constraint firstAttribute="trailingMargin" secondItem="p1A-zI-RoA" secondAttribute="trailing" id="Gvh-zw-mF0"/>
+                            <constraint firstItem="p1A-zI-RoA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="4" id="H0Y-jP-OJf"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="p1A-zI-RoA" secondAttribute="bottom" constant="574" id="JE3-3Q-w27"/>
                             <constraint firstItem="p1A-zI-RoA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PMv-Gv-u0G"/>
-                            <constraint firstItem="p1A-zI-RoA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="28" id="QNL-Ik-z6F"/>
-                            <constraint firstItem="p1A-zI-RoA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="4" id="d9K-Da-ed2"/>
+                            <constraint firstItem="p1A-zI-RoA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="S33-vC-fvt"/>
+                            <constraint firstItem="p1A-zI-RoA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="28" id="Tsr-u5-ja3"/>
                             <constraint firstItem="p1A-zI-RoA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="pgp-QV-cGq"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="BTx-gC-rs6"/>
                                 <exclude reference="Dgw-dC-otH"/>
                                 <exclude reference="Gvh-zw-mF0"/>
+                                <exclude reference="H0Y-jP-OJf"/>
                                 <exclude reference="PMv-Gv-u0G"/>
+                                <exclude reference="S33-vC-fvt"/>
                                 <exclude reference="pgp-QV-cGq"/>
                             </mask>
                         </variation>
@@ -84,7 +91,7 @@
                                     <constraint firstAttribute="height" constant="40" id="j43-G1-wGQ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -111,7 +118,7 @@
                                     <constraint firstAttribute="height" constant="40" id="csD-gm-23P"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hgM-Po-HUe">
@@ -161,8 +168,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <action selector="salvarRuta" destination="m5J-FH-yAe" eventType="touchUpInside" id="bB0-UG-BjY"/>
-                                    <segue destination="0YF-xs-xy6" kind="showDetail" id="vl8-NT-nOf"/>
+                                    <segue destination="0YF-xs-xy6" kind="showDetail" identifier="crearRuta" id="vl8-NT-nOf"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2gn-iu-biz">
@@ -174,7 +180,7 @@
                                     <constraint firstAttribute="height" constant="45" id="s4e-8b-I8a"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -333,7 +339,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TiJ-WR-uUG">
                                 <rect key="frame" x="20" y="28" width="335" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hev-hd-sFw">
@@ -349,6 +355,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="mapa" destination="q6k-J2-w4o" id="Ani-ea-i76"/>
+                        <outlet property="titleRuta" destination="TiJ-WR-uUG" id="bEv-cW-HBR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wHc-CG-SPB" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -372,7 +379,7 @@
             </objects>
             <point key="canvasLocation" x="1476.5" y="673.5"/>
         </scene>
-        <!--ReaderVC-->
+        <!--Capturar Codigo-->
         <scene sceneID="mg8-d5-6kE">
             <objects>
                 <viewController id="Iiq-Fe-sP2" customClass="QRReaderVC" customModule="ProyectoFinal" customModuleProvider="target" sceneMemberID="viewController">
@@ -385,12 +392,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="pgT-fp-Nvx"/>
+                    <navigationItem key="navigationItem" title="Capturar Codigo" id="nfF-Lw-Zfg">
+                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="cfP-In-j7q">
+                            <connections>
+                                <segue destination="0YF-xs-xy6" kind="showDetail" id="rox-b4-bnV"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gJU-vd-qLU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1969.5" y="298.5"/>
+            <point key="canvasLocation" x="2061.5" y="301.5"/>
         </scene>
         <!--DisplayVC-->
         <scene sceneID="MaG-mU-T8A">
@@ -434,7 +447,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="827-Z1-U5X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1969.5" y="1031.5"/>
+            <point key="canvasLocation" x="2113.5" y="1180.5"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="vl8-NT-nOf"/>
+    </inferredMetricsTieBreakers>
 </document>
