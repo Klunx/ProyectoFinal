@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE5253AB1D38D767005DDC8F /* Punto.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5253AA1D38D767005DDC8F /* Punto.swift */; };
 		EE6E53FB1D18075B002538A6 /* MapLocatorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6E53FA1D18075B002538A6 /* MapLocatorVC.swift */; };
 		EE76347B1D33A28200F14969 /* CrearRutaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE76347A1D33A28200F14969 /* CrearRutaVC.swift */; };
 		EE76347D1D33B74C00F14969 /* Ruta.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE76347C1D33B74C00F14969 /* Ruta.swift */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EE5253AA1D38D767005DDC8F /* Punto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Punto.swift; sourceTree = "<group>"; };
 		EE6E53FA1D18075B002538A6 /* MapLocatorVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapLocatorVC.swift; sourceTree = "<group>"; };
 		EE76347A1D33A28200F14969 /* CrearRutaVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrearRutaVC.swift; sourceTree = "<group>"; };
 		EE76347C1D33B74C00F14969 /* Ruta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ruta.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				EED7C4821D31EBD100B74991 /* QRNavController.swift */,
 				EE76347A1D33A28200F14969 /* CrearRutaVC.swift */,
 				EE76347C1D33B74C00F14969 /* Ruta.swift */,
+				EE5253AA1D38D767005DDC8F /* Punto.swift */,
 			);
 			path = ProyectoFinal;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 				EE76347D1D33B74C00F14969 /* Ruta.swift in Sources */,
 				EED7C47F1D31D8FC00B74991 /* QRReaderVC.swift in Sources */,
 				EE76347B1D33A28200F14969 /* CrearRutaVC.swift in Sources */,
+				EE5253AB1D38D767005DDC8F /* Punto.swift in Sources */,
 				EEBD68001D16C9CA00A2DCAE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

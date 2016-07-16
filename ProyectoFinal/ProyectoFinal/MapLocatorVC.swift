@@ -27,15 +27,12 @@ class MapLocatorVC: UIViewController, CLLocationManagerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        longPressGesture()
         // Inicializar mapa.
         manejador.delegate = self
         manejador.desiredAccuracy = kCLLocationAccuracyBest
         manejador.requestWhenInUseAuthorization()
         manejador.distanceFilter = 50
-        
-        longPressGesture()
-        
     }
     
     func longPressGesture() {
@@ -45,16 +42,24 @@ class MapLocatorVC: UIViewController, CLLocationManagerDelegate {
     }
 
     func longPressAction(gestureRecognizer:UIGestureRecognizer) {
-        
         let touchPoint = gestureRecognizer.locationInView(self.mapa)
-        let newCoord:CLLocationCoordinate2D = mapa.convertPoint(touchPoint, toCoordinateFromView: self.mapa)
-        
-        let newAnotation = MKPointAnnotation()
-        newAnotation.coordinate = newCoord
-        newAnotation.title = "New Location"
-        newAnotation.subtitle = "New Subtitle"
-        mapa.addAnnotation(newAnotation)
-        
+        let newCoord:CLLocationCoordinate2D = self.mapa.convertPoint(touchPoint, toCoordinateFromView: self.mapa)
+        var titulo : String?
+        let alert = UIAlertController(title: "Agregar", message: "Titulo descriptivo", preferredStyle: UIAlertControllerStyle.Alert);
+        alert.addTextFieldWithConfigurationHandler(nil);
+        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: {(action:UIAlertAction) in
+            let fields = alert.textFields!;
+            titulo = fields[0].text!;
+            let newAnotation = MKPointAnnotation()
+            newAnotation.coordinate = newCoord
+            newAnotation.title = titulo
+            self.mapa.addAnnotation(newAnotation)
+            let punto : Punto = Punto(newAnotation: newAnotation)
+            self.ruta.puntosEnLaRuta.append(punto)
+
+        }));
+        presentViewController(alert, animated: true, completion: nil)
+                
     }
 
     override func didReceiveMemoryWarning() {

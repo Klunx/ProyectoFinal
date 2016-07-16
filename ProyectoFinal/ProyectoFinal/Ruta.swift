@@ -10,8 +10,9 @@ import Foundation
 
 class Ruta {
     
-    var titulo = ""
-    var descripcion = ""
+    var titulo : String = ""
+    var descripcion : String = ""
+    var puntosEnLaRuta = [Punto]()
     
     init () {}
     

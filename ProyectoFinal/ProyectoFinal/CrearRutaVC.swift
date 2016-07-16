@@ -37,10 +37,8 @@ class CrearRutaVC: UIViewController, UIImagePickerControllerDelegate, UINavigati
     }
     
     func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
-        
         fotoVista.image = image
-        picker.dismissViewControllerAnimated(true, completion: nil)
-        
+        picker.dismissViewControllerAnimated(true, completion: nil)        
     }
     
     func imagePickerControllerDidCancel(picker: UIImagePickerController) {
