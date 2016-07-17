@@ -8,15 +8,18 @@
 
 import Foundation
 import MapKit
+
 class Punto {
     
-    var newAnotation = MKPointAnnotation()
-    var imagePath : String = ""
+    var anotacion : CLLocationCoordinate2D!
+    var image: UIImage?
+    var titulo: String = ""
     
     init () {}
     
-    init (newAnotation : MKPointAnnotation) {
-        self.newAnotation = newAnotation
+    init (anotacion : CLLocationCoordinate2D, titulo : String) {
+        self.anotacion = anotacion
+        self.titulo = titulo
     }
-        
+    
 }

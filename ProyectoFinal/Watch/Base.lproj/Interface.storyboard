@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10115" systemVersion="15F34" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10084"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10032"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Watch" customModuleProvider="target">
+                    <items>
+                        <map height="100" alignment="left" id="hBn-Q8-hNi"/>
+                        <slider width="1" alignment="left" value="1" maximum="3" steps="3" id="zGG-TV-9v8">
+                            <connections>
+                                <action selector="hacerZoom:" destination="AgC-eL-Hgc" id="HHk-Un-ug1"/>
+                            </connections>
+                        </slider>
+                    </items>
+                    <connections>
+                        <outlet property="mapa" destination="hBn-Q8-hNi" id="NKy-N5-8sE"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>

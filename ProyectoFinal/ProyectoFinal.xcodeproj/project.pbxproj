@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		EE5253AB1D38D767005DDC8F /* Punto.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5253AA1D38D767005DDC8F /* Punto.swift */; };
 		EE6E53FB1D18075B002538A6 /* MapLocatorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6E53FA1D18075B002538A6 /* MapLocatorVC.swift */; };
+		EE7420E51D3B80CD00487DDA /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE7420E31D3B80CD00487DDA /* Interface.storyboard */; };
+		EE7420E71D3B80CD00487DDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE7420E61D3B80CD00487DDA /* Assets.xcassets */; };
+		EE7420EE1D3B80CD00487DDA /* Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EE7420ED1D3B80CD00487DDA /* Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EE7420F31D3B80CD00487DDA /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7420F21D3B80CD00487DDA /* InterfaceController.swift */; };
+		EE7420F51D3B80CD00487DDA /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7420F41D3B80CD00487DDA /* ExtensionDelegate.swift */; };
+		EE7420F71D3B80CE00487DDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE7420F61D3B80CE00487DDA /* Assets.xcassets */; };
+		EE7420FB1D3B80CE00487DDA /* Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = EE7420E11D3B80CD00487DDA /* Watch.app */; };
 		EE76347B1D33A28200F14969 /* CrearRutaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE76347A1D33A28200F14969 /* CrearRutaVC.swift */; };
 		EE76347D1D33B74C00F14969 /* Ruta.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE76347C1D33B74C00F14969 /* Ruta.swift */; };
 		EEBD68001D16C9CA00A2DCAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBD67FF1D16C9CA00A2DCAE /* AppDelegate.swift */; };
@@ -25,6 +32,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		EE7420EF1D3B80CD00487DDA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EEBD67F41D16C9CA00A2DCAE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE7420EC1D3B80CD00487DDA;
+			remoteInfo = "Watch Extension";
+		};
+		EE7420F91D3B80CE00487DDA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EEBD67F41D16C9CA00A2DCAE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE7420E01D3B80CD00487DDA;
+			remoteInfo = Watch;
+		};
 		EEBD68141D16C9CA00A2DCAE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = EEBD67F41D16C9CA00A2DCAE /* Project object */;
@@ -41,9 +62,43 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		EE7421011D3B80CE00487DDA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				EE7420EE1D3B80CD00487DDA /* Watch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE7421031D3B80CE00487DDA /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				EE7420FB1D3B80CE00487DDA /* Watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		EE5253AA1D38D767005DDC8F /* Punto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Punto.swift; sourceTree = "<group>"; };
 		EE6E53FA1D18075B002538A6 /* MapLocatorVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapLocatorVC.swift; sourceTree = "<group>"; };
+		EE7420E11D3B80CD00487DDA /* Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Watch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE7420E41D3B80CD00487DDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		EE7420E61D3B80CD00487DDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE7420E81D3B80CD00487DDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE7420ED1D3B80CD00487DDA /* Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE7420F21D3B80CD00487DDA /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		EE7420F41D3B80CD00487DDA /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		EE7420F61D3B80CE00487DDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE7420F81D3B80CE00487DDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE76347A1D33A28200F14969 /* CrearRutaVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrearRutaVC.swift; sourceTree = "<group>"; };
 		EE76347C1D33B74C00F14969 /* Ruta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ruta.swift; sourceTree = "<group>"; };
 		EEBD67FC1D16C9CA00A2DCAE /* ProyectoFinal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProyectoFinal.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,6 +121,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		EE7420EA1D3B80CD00487DDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EEBD67F91D16C9CA00A2DCAE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -90,12 +152,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EE7420E21D3B80CD00487DDA /* Watch */ = {
+			isa = PBXGroup;
+			children = (
+				EE7420E31D3B80CD00487DDA /* Interface.storyboard */,
+				EE7420E61D3B80CD00487DDA /* Assets.xcassets */,
+				EE7420E81D3B80CD00487DDA /* Info.plist */,
+			);
+			path = Watch;
+			sourceTree = "<group>";
+		};
+		EE7420F11D3B80CD00487DDA /* Watch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EE7420F21D3B80CD00487DDA /* InterfaceController.swift */,
+				EE7420F41D3B80CD00487DDA /* ExtensionDelegate.swift */,
+				EE7420F61D3B80CE00487DDA /* Assets.xcassets */,
+				EE7420F81D3B80CE00487DDA /* Info.plist */,
+			);
+			path = "Watch Extension";
+			sourceTree = "<group>";
+		};
 		EEBD67F31D16C9CA00A2DCAE = {
 			isa = PBXGroup;
 			children = (
 				EEBD67FE1D16C9CA00A2DCAE /* ProyectoFinal */,
 				EEBD68161D16C9CA00A2DCAE /* ProyectoFinalTests */,
 				EEBD68211D16C9CA00A2DCAE /* ProyectoFinalUITests */,
+				EE7420E21D3B80CD00487DDA /* Watch */,
+				EE7420F11D3B80CD00487DDA /* Watch Extension */,
 				EEBD67FD1D16C9CA00A2DCAE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -106,6 +191,8 @@
 				EEBD67FC1D16C9CA00A2DCAE /* ProyectoFinal.app */,
 				EEBD68131D16C9CA00A2DCAE /* ProyectoFinalTests.xctest */,
 				EEBD681E1D16C9CA00A2DCAE /* ProyectoFinalUITests.xctest */,
+				EE7420E11D3B80CD00487DDA /* Watch.app */,
+				EE7420ED1D3B80CD00487DDA /* Watch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -152,6 +239,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		EE7420E01D3B80CD00487DDA /* Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE7421021D3B80CE00487DDA /* Build configuration list for PBXNativeTarget "Watch" */;
+			buildPhases = (
+				EE7420DF1D3B80CD00487DDA /* Resources */,
+				EE7421011D3B80CE00487DDA /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE7420F01D3B80CD00487DDA /* PBXTargetDependency */,
+			);
+			name = Watch;
+			productName = Watch;
+			productReference = EE7420E11D3B80CD00487DDA /* Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		EE7420EC1D3B80CD00487DDA /* Watch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE7421001D3B80CE00487DDA /* Build configuration list for PBXNativeTarget "Watch Extension" */;
+			buildPhases = (
+				EE7420E91D3B80CD00487DDA /* Sources */,
+				EE7420EA1D3B80CD00487DDA /* Frameworks */,
+				EE7420EB1D3B80CD00487DDA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Watch Extension";
+			productName = "Watch Extension";
+			productReference = EE7420ED1D3B80CD00487DDA /* Watch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		EEBD67FB1D16C9CA00A2DCAE /* ProyectoFinal */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = EEBD68271D16C9CA00A2DCAE /* Build configuration list for PBXNativeTarget "ProyectoFinal" */;
@@ -159,10 +280,12 @@
 				EEBD67F81D16C9CA00A2DCAE /* Sources */,
 				EEBD67F91D16C9CA00A2DCAE /* Frameworks */,
 				EEBD67FA1D16C9CA00A2DCAE /* Resources */,
+				EE7421031D3B80CE00487DDA /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				EE7420FA1D3B80CE00487DDA /* PBXTargetDependency */,
 			);
 			name = ProyectoFinal;
 			productName = ProyectoFinal;
@@ -215,6 +338,13 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Fernando Renteria Correa";
 				TargetAttributes = {
+					EE7420E01D3B80CD00487DDA = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = YHR45B9REA;
+					};
+					EE7420EC1D3B80CD00487DDA = {
+						CreatedOnToolsVersion = 7.3;
+					};
 					EEBD67FB1D16C9CA00A2DCAE = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = YHR45B9REA;
@@ -245,11 +375,30 @@
 				EEBD67FB1D16C9CA00A2DCAE /* ProyectoFinal */,
 				EEBD68121D16C9CA00A2DCAE /* ProyectoFinalTests */,
 				EEBD681D1D16C9CA00A2DCAE /* ProyectoFinalUITests */,
+				EE7420E01D3B80CD00487DDA /* Watch */,
+				EE7420EC1D3B80CD00487DDA /* Watch Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		EE7420DF1D3B80CD00487DDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE7420E71D3B80CD00487DDA /* Assets.xcassets in Resources */,
+				EE7420E51D3B80CD00487DDA /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE7420EB1D3B80CD00487DDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE7420F71D3B80CE00487DDA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EEBD67FA1D16C9CA00A2DCAE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -277,6 +426,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		EE7420E91D3B80CD00487DDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE7420F51D3B80CD00487DDA /* ExtensionDelegate.swift in Sources */,
+				EE7420F31D3B80CD00487DDA /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EEBD67F81D16C9CA00A2DCAE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -313,6 +471,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		EE7420F01D3B80CD00487DDA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE7420EC1D3B80CD00487DDA /* Watch Extension */;
+			targetProxy = EE7420EF1D3B80CD00487DDA /* PBXContainerItemProxy */;
+		};
+		EE7420FA1D3B80CE00487DDA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE7420E01D3B80CD00487DDA /* Watch */;
+			targetProxy = EE7420F91D3B80CE00487DDA /* PBXContainerItemProxy */;
+		};
 		EEBD68151D16C9CA00A2DCAE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = EEBD67FB1D16C9CA00A2DCAE /* ProyectoFinal */;
@@ -326,6 +494,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		EE7420E31D3B80CD00487DDA /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE7420E41D3B80CD00487DDA /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		EEBD68031D16C9CA00A2DCAE /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -345,6 +521,70 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		EE7420FC1D3B80CE00487DDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Watch_Extension;
+				INFOPLIST_FILE = Watch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.au.klunx.ProyectoFinal.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		EE7420FD1D3B80CE00487DDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Watch_Extension;
+				INFOPLIST_FILE = Watch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.au.klunx.ProyectoFinal.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		EE7420FE1D3B80CE00487DDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.au.klunx.ProyectoFinal.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		EE7420FF1D3B80CE00487DDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.au.klunx.ProyectoFinal.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
 		EEBD68251D16C9CA00A2DCAE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -507,6 +747,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		EE7421001D3B80CE00487DDA /* Build configuration list for PBXNativeTarget "Watch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE7420FE1D3B80CE00487DDA /* Debug */,
+				EE7420FF1D3B80CE00487DDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EE7421021D3B80CE00487DDA /* Build configuration list for PBXNativeTarget "Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE7420FC1D3B80CE00487DDA /* Debug */,
+				EE7420FD1D3B80CE00487DDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		EEBD67F71D16C9CA00A2DCAE /* Build configuration list for PBXProject "ProyectoFinal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
