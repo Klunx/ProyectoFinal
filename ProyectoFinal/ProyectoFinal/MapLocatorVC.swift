@@ -74,6 +74,13 @@ class MapLocatorVC: UIViewController, CLLocationManagerDelegate, MKMapViewDelega
         
         myPicker.delegate = self
         
+        if (self.ruta!.puntosEnLaRuta.count > 0) {
+            for punto in self.ruta!.puntosEnLaRuta {
+                let elementoMapa = self.convertirMKMapItem(punto)
+                self.anotaPunto(elementoMapa)
+                self.obtenerRuta()
+            }
+        }
         longPressGesture()
     }
     
@@ -218,7 +225,8 @@ class MapLocatorVC: UIViewController, CLLocationManagerDelegate, MKMapViewDelega
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
         if segue.identifier == "capturarQR" {
-            let qrReader = segue.destinationViewController as! QRNavController
+            let qrNav = segue.destinationViewController as! QRNavController
+            let qrReader = qrNav.topViewController as! QRReaderVC
             qrReader.ruta = self.ruta
         }
     }

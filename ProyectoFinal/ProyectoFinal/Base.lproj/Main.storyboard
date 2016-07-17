@@ -346,7 +346,7 @@
                                 <rect key="frame" x="20" y="536" width="113" height="45"/>
                                 <state key="normal" title="Capturar QR"/>
                                 <connections>
-                                    <segue destination="Y63-4w-o27" kind="showDetail" id="PdB-TH-FbL"/>
+                                    <segue destination="Y63-4w-o27" kind="showDetail" identifier="capturarQR" id="PdB-TH-FbL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8W-nP-dyI">
@@ -402,7 +402,7 @@
                     <navigationItem key="navigationItem" title="Capturar Codigo" id="nfF-Lw-Zfg">
                         <barButtonItem key="leftBarButtonItem" systemItem="stop" id="cfP-In-j7q">
                             <connections>
-                                <segue destination="0YF-xs-xy6" kind="showDetail" id="rox-b4-bnV"/>
+                                <segue destination="0YF-xs-xy6" kind="showDetail" identifier="regresarMapa" id="rox-b4-bnV"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -470,6 +470,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="vl8-NT-nOf"/>
+        <segue reference="rox-b4-bnV"/>
     </inferredMetricsTieBreakers>
 </document>

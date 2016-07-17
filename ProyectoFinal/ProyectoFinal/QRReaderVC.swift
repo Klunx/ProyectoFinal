@@ -19,6 +19,8 @@ class QRReaderVC: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     var marcoQR : UIView?
     // Almancenar codigo codigo QR.
     var urls : String?
+    // Ruta.
+    var ruta: Ruta?
     
     override func viewWillAppear(animated: Bool) {
         sesion?.startRunning()
@@ -83,14 +85,18 @@ class QRReaderVC: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        if segue.identifier == "regresarMapa" {
+            let mapLocator = segue.destinationViewController as! MapLocatorVC
+            mapLocator.ruta = self.ruta
+        }
     }
-    */
+    
 
 }

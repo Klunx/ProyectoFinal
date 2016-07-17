@@ -10,8 +10,6 @@ import UIKit
 
 class QRNavController: UINavigationController {
     
-    var ruta: Ruta?
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
